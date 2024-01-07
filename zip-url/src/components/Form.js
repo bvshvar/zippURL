@@ -17,7 +17,7 @@ class Form extends React.Component {
             loading: false,
             errors: [],
             errorMessage: {},
-            toolTipMessage: 'Copy To Clip Board'
+            toolTipMessage: 'Copy To Clip Bovhard'
         };
 
     }
@@ -39,11 +39,11 @@ class Form extends React.Component {
         //If the user has input a prefered alias then we use it, if not, we generate one
         //Be sure to change minilinkit.com to your domain
         var generatedKey = nanoid(5);
-        var generatedURL = "zipURL.com/" + generatedKey
+        var generatedURL ="zipped-url-c9e4f67f9a36.herokuapp.com/" + generatedKey
 
         if (this.state.preferedAlias !== '') {
             generatedKey = this.state.preferedAlias
-            generatedURL = "zipURL.com/" + this.state.preferedAlias
+            generatedURL = "zipped-url-c9e4f67f9a36.herokuapp.com/" + this.state.preferedAlias
         }
 
         const db = getDatabase();
@@ -176,7 +176,7 @@ class Form extends React.Component {
                         <label htmlFor="basic-url">Your zipped URL</label>
                         <div className="input-group mb-3">
                             <div className="input-group-prepend">
-                                <span className="input-group-text">zipURL.com/</span>
+                                <span className="input-group-text">zipped-url-c9e4f67f9a36.herokuapp.com//</span>
                             </div>
                             <input
                                 id="preferedAlias"
