@@ -1,9 +1,11 @@
 # zippURL
+
 A URL Shortener Application build with React JS, Python Flask, Firebase Data Base and Heroku.
 
 The project is composed of two folders, zip-url and the zip-url-server
 
 zip-url
+
 This is single page react app written with bootstrap that takes the long URL from a user, stores it in a database (firebase database) and gives the user a generated shortened url.
 
 Dependencies
@@ -14,9 +16,11 @@ npm install To install dependencies
 npm start
 
 mini-link-it-server
+
 This is a python flask web server that listens for calls made with the generated URL, goes to the database, fetches the long URL then redirects the user to the long URLS page.
 
 Dependencies
+
 Firebase Project Account
 Firebase Database in Project Account
 Firebase service account json key file (ServiceAccountKey.json) in zip-url-server/app/main.py line 6
