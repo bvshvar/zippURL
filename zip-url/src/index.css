@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background:radial-gradient(#a9a9a9, #030303);
+  background:radial-gradient(#a9a9a9, #191970);
   min-height: 100vh;
   display: flex;
   font-weight: 400;
