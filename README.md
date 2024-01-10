@@ -15,7 +15,7 @@ Running client Locally
 npm install To install dependencies
 npm start
 
-mini-link-it-server
+zip-url-server
 
 This is a python flask web server that listens for calls made with the generated URL, goes to the database, fetches the long URL then redirects the user to the long URLS page.
 
