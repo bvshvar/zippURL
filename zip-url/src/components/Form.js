@@ -146,7 +146,7 @@ class Form extends React.Component {
         return (
             <div className="container">
                 <form autoComplete="off">
-                    <h3>zipURL!</h3>
+                    <h3>zippURL!</h3>
 
                     <div className="form-group">
                         <label>Enter Your URL</label>
