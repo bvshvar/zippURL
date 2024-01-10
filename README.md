@@ -1,48 +1,32 @@
-zippURL - URL Shortener Application
-zippURL is a URL Shortener Application built with React JS, Python Flask, Firebase Database, and hosted on Heroku.
+zipp URL
+A URL Shortener Application build with React JS, Python Flask, Firebase Data Base and Heroku.
 
-zip-url (Client)
-This is a single-page React app written with Bootstrap. It takes a long URL from a user, stores it in a Firebase database, and generates a shortened URL.
+Project Videos
+React Client App: https://youtu.be/LGdIDm-4Dv8
+Flask Server and Heroku Deployment: https://youtu.be/OX4IBcoKVfg
+The project is composed of two folders, mini-link-it-client and mini-link-it-server
 
-Dependencies:
+zip-url
+This is single page react app written with bootstrap that takes the long URL from a user, stores it in a database (firebase database) and gives the user a generated mini url.
+
+Dependencies
 Firebase Project Account
 Firebase Database in Project Account
-Running Client Locally:
-Install dependencies:
-bash
-Copy code
-npm install
-Run the client locally:
-bash
-Copy code
+Firebase config in index.js line 9. See this video on how to generate your own config.
+Running client Locally
+npm install To install dependencies (Be sure you have a firebase account)
 npm start
-zip-url-server (Server)
-This is a Python Flask web server that listens for calls made with the generated URL, retrieves the long URL from the database, and redirects the user to the long URL's page.
+mini-link-it-server
+This is a python flask web server that listens for calls made with the generated URL, goes to the database, fetches the long URL then redirects the user to the long URLS page.
 
-Dependencies:
+Dependencies
 Firebase Project Account
 Firebase Database in Project Account
-Firebase service account JSON key file (ServiceAccountKey.json) in zip-url-server/app/main.py (line 6)
-Firebase Database URL in zip-url-server/app/main.py (line 8)
-Running Server Locally:
-Create a virtual environment in the zip-url-server folder:
-
-bash
-Copy code
-python3 -m venv venv
-Activate virtual environment:
-
-For Windows:
-bash
-Copy code
-venv\Scripts\activate
-For macOS/Linux:
-bash
-Copy code
-source venv/bin/activate
-Run the server:
-
-bash
-Copy code
+Firebase service account json key file (ServiceAccountKey.json) in mini-link-it-server/app/main.py line 6 (See video on how to generate yours)
+Firebase Database URL in mini-link-it-server/app/main.py line 8 (See video on how to generate yours)
+Running Server Locally
+Create a virtual environment in the mini-link-it-server folder (python3 -m venv venv)
+Activate virtual environment (source venv/bin/activate for mac and venv/Scripts/activate for windows)
+Besure you have the ServiceAccountKey.json in mini-link-it-server.
 python wsgi.py
-The Flask app is also configured to run the production version of the React app.
+The flask app is also set up to run the production version the react app. The build should be locatedin the app folder for this to work!
