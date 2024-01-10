@@ -1,47 +1,48 @@
-# zippURL
+zippURL - URL Shortener Application
+zippURL is a URL Shortener Application built with React JS, Python Flask, Firebase Database, and hosted on Heroku.
 
-A URL Shortener Application build with React JS, Python Flask, Firebase Data Base and Heroku.
+zip-url (Client)
+This is a single-page React app written with Bootstrap. It takes a long URL from a user, stores it in a Firebase database, and generates a shortened URL.
 
-The project is composed of two folders, zip-url and the zip-url-server
-
-zip-url
-
-This is single page react app written with bootstrap that takes the long URL from a user, stores it in a database (firebase database) and gives the user a generated shortened url.
-
-Dependencies
-
+Dependencies:
 Firebase Project Account
-
 Firebase Database in Project Account
-
-Running client Locally
-
-npm install To install dependencies
-
+Running Client Locally:
+Install dependencies:
+bash
+Copy code
+npm install
+Run the client locally:
+bash
+Copy code
 npm start
+zip-url-server (Server)
+This is a Python Flask web server that listens for calls made with the generated URL, retrieves the long URL from the database, and redirects the user to the long URL's page.
 
-
-zip-url-server
-
-This is a python flask web server that listens for calls made with the generated URL, goes to the database, fetches the long URL then redirects the user to the long URLS page.
-
-Dependencies
-
+Dependencies:
 Firebase Project Account
-
 Firebase Database in Project Account
+Firebase service account JSON key file (ServiceAccountKey.json) in zip-url-server/app/main.py (line 6)
+Firebase Database URL in zip-url-server/app/main.py (line 8)
+Running Server Locally:
+Create a virtual environment in the zip-url-server folder:
 
-Firebase service account json key file (ServiceAccountKey.json) in zip-url-server/app/main.py line 6
+bash
+Copy code
+python3 -m venv venv
+Activate virtual environment:
 
-Firebase Database URL in zip-url-server/app/main.py line 8
+For Windows:
+bash
+Copy code
+venv\Scripts\activate
+For macOS/Linux:
+bash
+Copy code
+source venv/bin/activate
+Run the server:
 
-Running Server Locally
-
-Create a virtual environment in the zip-url-server folder (python3 -m venv venv)
-
-Activate virtual environment (venv/Scripts/activate)
-
+bash
+Copy code
 python wsgi.py
-
-
-The flask app is also set up to run the production version the react app. 
+The Flask app is also configured to run the production version of the React app.
