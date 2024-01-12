@@ -2,7 +2,7 @@
 A URL Shortener Application build with React JS, Python Flask, Firebase Data Base and Heroku.
 
 
-The project is composed of two folders, mini-link-it-client and mini-link-it-server
+The project is composed of two folders, zip-url and zip-url-server
 
 ## zip-url
 This is single page react app written with bootstrap that takes the long URL from a user, stores it in a database (firebase database) and gives the user a generated
